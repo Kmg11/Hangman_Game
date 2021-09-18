@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hangman Game</title>
+		<link rel="icon" href="imgs/icon.png">
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="game-info">
+				<div class="game-name">Hangman</div>
+				<div class="category">Word From: <span></span></div>
+			</div>
+
+			<hr />
+
+			<div class="row">
+				<div class="hangman-draw">
+					<div class="the-draw">
+						<div class="the-stand"></div>
+						<div class="the-hang"></div>
+						<div class="the-rope"></div>
+						<div class="the-man">
+							<div class="head"></div>
+							<div class="body"></div>
+							<div class="hands"></div>
+							<div class="legs"></div>
+						</div>
+					</div>
+				</div>
+				<div class="letters"></div>
+			</div>
+
+			<hr />
+
+			<div class="letters-guess"></div>
+		</div>
+
+		<audio id="success" src="sounds/win.mp3" preload="auto"></audio>
+		<audio id="fali" src="sounds/fail.mp3" preload="auto"></audio>
+
+		<div class="popup">
+			<h2>Game Over</h2>
+			<div class="game-status">
+				<div class="player-status">You <span>Win</span></div>
+				<div class="wrong-attempts">You Wrong <span>5</span> Times</div>
+				<button class="play-again">Try Again</button>
+			</div>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
